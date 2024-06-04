@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Anybody", sans-serif;
+    background-color: #dfdfd8;
+}
+
+.container{
+    width: min(90%,1200px);
+    margin-inline: auto;
+}
+header{
+    background-color: #fafaf6;
+    height: 4.5rem;
+}
+.desktop-menu{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.desktop-menu h1{
+    font-size: 1.5625rem;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+.menu-links{
+    display: flex;
+    gap: 1rem;
+}
+.menu-links li{
+    list-style: none;
+}
+.menu-links li a{
+    text-decoration: none;
+    color: #2b2b2b;
+    font-weight: 400;
+    font-size: 1.25rem;
+    
+}
+.menu-links li a:hover{
+    color: #5f6ad4;
+   
+}
+.humbergur{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+.menu-actions{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.btn-primary, .btn-secondry{
+    display: inline-block;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+    text-align: center;
+}
+.btn-secondry{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.hero{
+    height: calc(100vh - 4.5rem);
+    background: linear-gradient(rgba(0, 0, 0, 0.3) , rgba(0, 0, 0, 0.3)),url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-min-an-1234035.jpg') center/ cover no-repeat;
+    background-position: buttom;
+}
+
+.hero .container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    gap: 1rem;
+}
+.hero .container h1{
+    font-size:5rem ;
+    font-weight: 400;
+}
+
+.hero .container button{
+    background-color: #5f6ad4;
+    padding: 0.9rem 3.75rem;
+    border: none;
+    border-radius: 0.625rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.hero .container button:hover{
+    background-color: #cecec1;
+    color: black;
+}
+.middle{
+    margin-top: 5rem;
+    height:50rem;
+    border-radius: 1rem;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://images.unsplash.com/photo-1500828131278-8de6878641b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D')center/cover no-repeat;
+}
+.middle .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+   padding-top: 8rem;
+}
+.middle .container h5:nth-child(1){
+    color: white;
+    font-size:3.125rem ;
+    font-weight: 700;
+}
+.middle .container h5:nth-child(2){
+    color: white;
+    font-size:1.5625rem ;
+    font-weight: 700;
+}
+.center{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+.center-item{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.img{
+    max-width: 100%;
+    height: 18.5rem;
+    border-radius: 2rem;
+}
+.img1{
+   
+    background: url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-chermiti-mohamed-3049225.jpg') center/cover no-repeat;
+}
+.img2{
+    background: url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-lucas-pezeta-2985098.jpg') center/cover no-repeat;
+}
+.img3{
+    background: url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-thiago-2410573.jpg') center/cover no-repeat;
+}
+.img4{
+    background: url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-oluremi-adebayo-2908176.jpg') center/cover no-repeat;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: self-start;
+}
+.info span{
+    font-size: 1.5625rem;
+    color: #2b2b2b;
+    font-weight: 400;
+}
+.info p{
+    font-size: 1.25rem;
+    color: #646464;
+    font-weight: 400;
+}
+.info button{
+    background-color: #5f6ad4;
+    padding: 1rem 2.3rem;
+    border: none;
+    border-radius: 0.625rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.info button:hover{
+    background-color: #cecec1;
+    color: black;
+}
+
+.section4{
+    margin-top: 5rem;
+    height: 28.75rem;
+    background:linear-gradient(rgba(0,0,0,0.7) ,rgba(0,0,0,0.7)), url('https://media.istockphoto.com/id/1921356231/photo/family-hiking-in-the-cotswolds-worcestershire-united-kingdom.webp?b=1&s=170667a&w=0&k=20&c=0EDy416kaqabJMaKiKxl74STPprLS-61g3uenqcS0Xo=')top/cover no-repeat;
+}
+.sec4-info{
+    height: 100%;
+    display: flex;
+    padding-left:5rem;
+    flex-direction: column;
+    gap: 1rem;
+   justify-content: center;
+   
+}
+.sec4-info h1{
+    font-size: 3.125rem;
+    color: white;
+    font-weight: 400;
+   
+}
+.sec4-info p{
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 400;
+}
+.section5{
+    margin-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.sec5-img{
+    height:38.75rem;
+    border-radius: 2rem;
+    background: url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-chermiti-mohamed-3049225.jpg') center/cover no-repeat;
+   
+}
+.section5 h1{
+    font-size: 3.125rem;
+    color: #2b2b2b;
+    font-weight: 400;
+   text-align: center;
+}
+.section6{
+    margin-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.section6 h1{
+    font-size: 3.125rem;
+    color: #2b2b2b;
+    font-weight: 400;
+   text-align: center;
+}
+.section6 .grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.grid-container .items{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.grid-container .items .item-info{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 10px;
+}
+.item-img{
+    height: 19.125rem;
+    border-radius: 1.5rem;
+}
+.item1-img{
+   
+    background:url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-andrea-piacquadio-3779750.jpg') center/cover no-repeat;
+
+}
+.item2-img{
+   
+    background:url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-rfstudio-3820430.jpeg') center/cover no-repeat;
+
+}
+.item3-img{
+   
+    background:url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-natalie-3759660.jpg') center/cover no-repeat;
+
+}
+.item-info{
+   width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+.item-info span{
+    font-size: 1.5625rem;
+    color: #2b2b2b;
+    font-weight: 400;
+}
+.item-info p{
+    font-size: 1.25rem;
+    color: #646464;
+    font-weight: 400;
+}
+.item-info .btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.item-info button{
+    background-color: #5f6ad4;
+    padding: 1rem 3.75rem;
+    border: none;
+    border-radius: 0.625rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+ 
+}
+.item-info button:hover{
+    background-color: #cecec1;
+    color: black;
+}
+
+.section7{
+    margin-top: 4.5rem;
+    height: 22.1875rem;
+    background: url('https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-lucas-pezeta-2985098.jpg') center/cover no-repeat;
+}
+.section7 .content{
+    height: 100%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    text-align: center;
+  
+}
+.content .content-info{
+    width: 80%;
+    background-color: #dfdfd8;
+    padding: 5rem 1rem;
+    border: 1px solid #5f6ad4;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-info span{
+    font-size: 1.5625rem;
+    color: #2b2b2b;
+    font-weight: 400;
+
+}
+.content-info button{
+    background-color: #5f6ad4;
+    padding: 1rem 2.75rem;
+    border: none;
+    border-radius: 0.625rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+   
+}
+
+.content-info button:hover{
+    background-color: #cecec1;
+    color: black;
+}
+
+footer{
+    height: 5.3125rem;
+    background-color: #2b2b2b;
+    padding: 2.65625rem 8rem;
+    color: white;
+    font-size: 1.1875rem;
+}
+
+@media (max-width:768px) {
+    .desktop-menu{
+        display: none;
+    }
+    header{
+        height: 0;
+    }
+    .humbergur{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: #5f6ad4;
+        color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        font-size: 2rem;
+    }
+
+    i{
+    z-index: 11111;
+    }
+    .mobile-menu{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        background-color: #2b2b2b;
+        inset: 0 0 0 0;
+        transform: translateX(0%);
+        transition: transform 350ms ease-in-out;
+
+    }
+    .mobile-menu[data-visible="false"]{
+        transform: translateX(100%);
+    }
+
+    .humbergur i[data-visible="false"]{
+        display: none;
+    }
+
+    .humbergur i[data-visible="true"]{
+        display:block;
+    }
+    .mobile-menu .navigation{
+        margin-top: 8rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+    .mobile-menu .navigation ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-menu h1{
+        color: white;
+        font-size: 2.3125rem;
+        font-weight: 700;
+    }
+    .menu-links  li a{
+        color: white;
+    }
+    .hero{
+        height: 100vh;
+
+    }
+   
+    .center{
+        grid-template-columns: 1fr;
+    }
+    .section6 .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .content .content-info{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    footer{
+        padding: 2.65625rem 1rem;
+    }
+   
+}
